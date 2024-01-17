@@ -28,5 +28,5 @@ const data = [
   ]
 </script>
 <template>
-    <FirstFormComponent :name="data" :formtype="type"/>
+    <FormsFirstFormComponent :name="data" :formtype="type"/>
 </template>

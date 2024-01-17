@@ -16,7 +16,7 @@ onMounted(async () => {
     <div class="ml-24">
         <div v-if="userdata.users" class="grid grid-rows-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ">
           <div v-for="data in userdata.users" :key="data.id">
-            <users :userData="data" />
+            <Users :userData="data" />
           </div>
         </div>
       </div>

@@ -35,5 +35,5 @@ const array = [
 ;
 </script>
 <template>
-    <FirstFormComponent FirstFormComponnet :name="array" :formtype="type"/>
+    <FormsFirstFormComponent :name="array" :formtype="type" />
 </template>

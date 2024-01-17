@@ -1,26 +1,22 @@
 <template>
-    <main class="bg-slate-300 h-screen">
-        <div class="flex gradient-background bg-gradient-background bg-180% animate-gradient-animation fixed w-full  bg-slate-700 h-16">
-            <img class=" flex-none w-18 h-18 mx-10"  src="/learn.png"  alt="book"/>
-            <h1 class=" flex flex-auto w-64 justify-center items-center text-xl text-white font-bold xl:text-3xl">Mantra NuxtJs Learnings</h1>
-            <img  class=" flex-none w-18 h-18 mx-10 " width="68" height="48" src="/sudheer.png" alt="Sudheer"/>
-          </div>
-        <div class="flex pt-16 ">
-            <div class="bg-slate-700 w-24">
-                <nav class="flex flex-col ">
-                    <NuxtLink to="/" class="m-5 mb-0 text-lg text-white">Home</NuxtLink>
-                    <NuxtLink to="/main" class="m-5 mb-0 text-lg text-white">user</NuxtLink>
-                    <NuxtLink to="/user" class="m-5 mb-0 text-lg text-white">Profile</NuxtLink>
-                    <NuxtLink to="/single-user" class="m-5 mb-0 text-lg text-white"></NuxtLink>
-                </nav>
-            </div> 
-            <div>
-                <div class=" w-screen">
-                    <slot />
-                </div>
-            </div>
+    <div class="relative min-h-screen">
+      <div class="fixed top-0 z-50 w-full bg-gradient-background bg-180% animate-gradient-animation bg-slate-700 h-16 flex items-center">
+        <img class="w-18 h-16 mx-10" src="/learn.png" alt="book" />
+        <h1 class="flex-auto w-64 text-xl text-white font-bold xl:text-3xl">Mantra NuxtJs Learnings</h1>
+        <img class="w-18 h-18 mx-10" width="68" height="48" src="/sudheer.png" alt="Sudheer" />
+      </div>
+      <div class="bg-slate-700 w-24 h-full fixed">
+        <nav class="flex flex-col p-5">
+          <NuxtLink to="/" class="mb-5 text-lg text-white">Home</NuxtLink>
+          <NuxtLink to="/main" class="mb-5 text-lg text-white">User</NuxtLink>
+          <NuxtLink to="/user" class="mb-5 text-lg text-white">Profile</NuxtLink>
+        </nav>
+      </div>
+      <div class="ml-24  overflow-y-auto" style="margin-top: 4rem; position: sticky; top: 0;">
+        <div class="w-full">
+          <slot />
         </div>
-
-
-    </main>
-</template>
+      </div>
+    </div>
+  </template>
+  

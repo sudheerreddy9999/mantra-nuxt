@@ -41,10 +41,10 @@ onMounted(() => {
       <button @click="() => toggleState('showData')" class="day2">User data </button>
     </div>
     <div v-if="coll">
-     <student/>
+      <FormsCollegeForm/>
     </div>
     <div v-if="stud">
-   <collegeVue/>
+      <FormsStudentForm/>
     </div>
     <div v-if="showEnterdedData" >
         <table class="styled-table">
@@ -101,4 +101,5 @@ onMounted(() => {
   .styled-table th {
     background-color: #f2f2f2;
   }
-</style>
+</style>  
+
